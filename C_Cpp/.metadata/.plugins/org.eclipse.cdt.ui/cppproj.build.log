@@ -1,0 +1,15 @@
+00:29:43 **** Incremental Build of configuration Debug for project cppproj ****
+make all 
+Building file: ../src/cppproj.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cppproj.d" -MT"src/cppproj.o" -o "src/cppproj.o" "../src/cppproj.cpp"
+Finished building: ../src/cppproj.cpp
+ 
+Building target: cppproj
+Invoking: MacOS X C++ Linker
+g++  -o "cppproj"  ./src/cppproj.o   
+Finished building target: cppproj
+ 
+
+00:29:44 Build Finished (took 1s.876ms)
+
