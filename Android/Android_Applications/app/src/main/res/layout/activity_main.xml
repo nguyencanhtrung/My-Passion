@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wordpress.unicornsnippets.note.MainActivity">
+
+    <ImageView android:id="@+id/logo"
+        style="@style/LogoImageStyle"
+        android:layout_width="@dimen/LogoWidth"
+        android:layout_height="@dimen/LogoHeight"
+        android:src="@drawable/logo"
+        />
+
+    <TextView android:id="@+id/designer"
+        style="@style/TextStyle.Designer"
+        android:layout_marginBottom="@dimen/LogoTextMarginBottom"
+        android:layout_marginRight="@dimen/LogoTextMarginRight"
+        android:layout_marginEnd="@dimen/LogoTextMarginEnd"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo"
+        android:text="@string/by_designer_name"
+        />
+
+    <TextView android:id="@+id/title"
+        style="@style/TextStyle.TextAndroidBeginner"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/name_beginner"/>
+</RelativeLayout>

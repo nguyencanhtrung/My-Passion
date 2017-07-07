@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LogoImageStyle">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">280dp</item>
+        <item name="android:maxHeight">280dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextStyle.Designer">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    
+    <style name="TextStyle.TextAndroidBeginner">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+</resources>

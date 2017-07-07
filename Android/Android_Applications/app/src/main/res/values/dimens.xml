@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="LogoWidth">216dp</dimen>
+    <dimen name="LogoHeight">340dp</dimen>
+
+    <dimen name="LogoTextMarginBottom">57dp</dimen>
+    <dimen name="LogoTextMarginRight">21dp</dimen>
+    <dimen name="LogoTextMarginEnd">21dp</dimen>
+</resources>
