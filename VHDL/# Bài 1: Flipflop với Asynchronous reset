@@ -1,0 +1,70 @@
+# Bài 1: Flipflop với Asynchronous reset
+library ieee;
+use ieee.std_logic_1164.all
+use numeric_std.all;
+
+entity DFF is
+	port (
+			clk	:	in	std_logic;
+			rst :	in	std_logic;
+
+			D 	: 	in	std_logic;
+			Q	:	out std_logic;
+		);
+end entity DFF;
+
+architecture behaviour of DFF is
+
+begin
+	process(clk, rst)
+		if rst = '1' then
+			Q <= '0';
+		elsif rising_edge(clk) then
+			Q <= D;
+		end if;
+	end process;
+end architecture;
+--=================================
+library ieee;
+use ieee.std_logic_1164.all;
+use numeric_std.all;
+
+entity tb_DFF is
+end entity tb_DFF;
+
+architecture behavior of tb_DFF is
+begin
+	
+
+end architecture;
+============================================
+# Bài 2: Flipflop với Synchronous reset
+library ieee;
+use ieee.std_logic_1164.all
+use numeric_std.all;
+
+entity DFF is
+	port (
+			clk	:	in	std_logic;
+			rst :	in	std_logic;
+
+			D 	: 	in	std_logic;
+			Q	:	out std_logic;
+		);
+end entity DFF;
+
+architecture behaviour of DFF is
+
+begin
+	process(clk)
+		if rising_edge(clk) then
+			if rst = '1' then
+				Q <= '0';
+			else
+				Q <= D;
+			end if;
+		end if;
+	end process;
+end architecture;
+
+# 
